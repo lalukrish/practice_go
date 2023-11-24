@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	"github.com/go-chi/chi"
-	//"github.com/lalukrish/practice_go/internal/handlers"
+	"github.com/lalukrish/practice_go/internal/handlers"
 	log "github.com/sirupsen/logrus"
 )
 
@@ -13,7 +13,7 @@ func main(){
 
 	log.SetReportCaller(true)
 	var r *chi.Mux = chi.NewRouter()
-	//handlers.Handler(r)
+	handlers.Handler(r)
 
 	fmt.Println("Starting GO API service...")
 
